@@ -1,0 +1,7 @@
+make : prog1 clean
+prog1 : prog1.o
+		g++ prog1.o -o prog1
+prog1.o : prog1.cpp
+		g++ -c prog1.cpp
+clean :
+	rm -f prog1.o prog1
